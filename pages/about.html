@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="../fonts/stylesheet.css" />
+   <link rel="stylesheet" href="../css/style.css" />
+   <link rel="stylesheet" href="../css/about.css" />
+   <script src="https://unpkg.com/lucide@latest"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+   <title>About | Wildlife India</title>
+</head>
+
+<body>
+
+   <div id="top"></div>
+
+   <header>
+      <nav class="header-container">
+         <div class="logo">
+            <h1 class="logo-text">
+               <a href="../index.html"><i data-lucide="trees"></i>
+               Wildlife India</a>
+            </h1>
+         </div>
+         <div class="nav-links">
+            <ul>
+               <li class="nav-link">
+                  <a href="../index.html">Home</a>
+               </li>
+               <li class="nav-link current">
+                  <a href="./about.html">About</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./explore.html">Explore</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./species.html">Species</a>
+               </li>
+               <li class="nav-link mobile-contact-link">
+                  <a href="./contact.html">
+                     <i class="fa-solid fa-phone"></i> Contact
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="nav-btn">
+            <button class="theme-btn" onclick="toggleDarkMode()"><i data-lucide="sun"></i></button>
+            <button id="sidebar-toggle-button" aria-expanded="false" onclick="toggleSidebar()">
+               <i id="sidebarIcon" data-lucide="menu"></i>
+            </button>
+            <a href="./contact.html" class="contact-btn">
+               <i class="fa-solid fa-phone"></i> Contact
+            </a>
+         </div>
+      </nav>
+   </header>
+
+   <div id="overlay" aria-hidden="true" onclick="closeSidebar()"></div>
+
+   <main class="main">
+
+      <section class="about-hero-sec">
+         <div class="about-hero-content">
+            <h1 class="about-hero-title"></h1>
+         </div>
+      </section>
+
+      <section class="mission-section">
+         <div id="wrapper" aria-hidden="true">
+            <h2 class="section-title">Our Mission</h2>
+            <p>To foster a deeper connection between people and nature by providing a beautiful, easy-to-use platform to discover India's protected areas. We aim to inspire responsible tourism and promote conservation awareness for generations to come.</p>
+         </div>
+      </section>
+
+      <section class="initiative-section">
+         <div id="wrapper" aria-hidden="true">
+            <h2 class="section-title">India's Conservation Legacy</h2>
+            <p>For over half a century, India has been at the forefront of wildlife conservation, enacting robust legal frameworks and launching ambitious projects to protect its priceless natural heritage. These initiatives form the backbone of the country's efforts to safeguard biodiversity.</p>
+            <div class="initiatives-grid grid">
+               <div class="initiative-card grid-card">
+                  <div class="initiative-icon"><i data-lucide="scale"></i></div>
+                  <h3>Wildife Protection Act, 1972</h3>
+                  <p>The foundational legal framework for the protection of wild animals, birds, and plants. It prohibits the hunting of endangered species and established the network of National Parks and Sanctuaries.</p>
+               </div>
+               <div class="initiative-card grid-card">
+                  <div class="initiative-icon"><i data-lucide="paw-print"></i></div>
+                  <h3>Project Tiger, 1973</h3>
+                  <p>A landmark conservation program launched to save the Bengal tiger from extinction. It has grown into one of the most successful species-specific conservation stories in the world, creating a network of Tiger Reserves.</p>
+               </div>
+               <div class="initiative-card grid-card">
+                  <div class="initiative-icon"><i data-lucide="wind"></i></div>
+                  <h3>Project Elephant, 1992</h3>
+                  <p>A nationwide initiative to protect the Asian elephant, its habitat, and corridors. It aims to address issues of human-elephant conflict and ensure the long-term survival of elephant populations.</p>
+               </div>
+               <div class="initiative-card grid-card">
+                  <div class="initiative-icon"><i data-lucide="book-lock"></i></div>
+                  <h3>Biological Diversity Act, 2002</h3>
+                  <p>This act was established to ensure the conservation of biological diversity, promote its sustainable use, and ensure fair and equitable sharing of benefits arising from the use of genetic resources.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="framework-section">
+         <div id="wrapper" aria-hidden="true">
+            <h2 class="section-title">India's Protected Area Network</h2>
+            <div class="definitions-container">   
+               <details>
+                  <summary>National Parks</summary>
+                  <p>Strictly protected areas designated by the central government. They are established to protect an entire ecosystem, including its flora, fauna, and landscapes. Human activities like forestry, grazing, and hunting are not permitted.</p>
+               </details>
+               <details>
+                  <summary>Wildlife Sanctuaries</summary>
+                  <p>Areas of significant ecological value where conservation efforts are focused on protecting specific species. Certain human activities may be allowed on a regulated basis, as long as they do not interfere with wildlife.</p>
+               </details>
+               <details>
+                  <summary>Biosphere Reserves</summary>
+                  <p>Large, protected landscapes that include national parks and wildlife sanctuaries. They are designed to conserve biodiversity while promoting sustainable use of natural resources and fostering research and education.</p>
+               </details>
+            </div>
+
+            <div class="facts-container">
+               <h3>A Commitment in Numbers</h3>
+               <p>ndia's dedication to preserving its natural heritage is codified in the <strong>Wildlife Protection Act, 1972</strong> and landmark initiatives like <strong>Project Tiger (1973)</strong>. This framework has established one of the world's most extensive networks of protected areas.</p>
+               <div class="facts-grid grid">
+                  <div class="fact-item grid-card">
+                     <div class="number">106</div>
+                     <div class="label">National Parks</div>
+                  </div>
+                  <div class="fact-item grid-card">
+                     <div class="number">567</div>
+                     <div class="label">Wildlife Sanctuaries</div>
+                  </div>
+                  <div class="fact-item grid-card">
+                     <div class="number">54</div>
+                     <div class="label">Tiger Reserves</div>
+                  </div>
+                  <div class="fact-item grid-card">
+                     <div class="number">5%+</div>
+                     <div class="label">Of India's Land Protected</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="principles-section">
+         <div id="wrapper" aria-hidden="true">
+            <h2 class="section-title">Our Guiding Principles</h2>
+            <div class="principles-grid grid">
+               <div class="principle-card grid-card">
+                  <div class="icon"><i data-lucide="check-circle" size="48"></i></div>
+                  <h3>Accuracy</h3>
+                  <p>We are committed to providing reliable, verified, and up-to-date information to help you plan your journey with confidence.</p>
+               </div>
+               <div class="principle-card grid-card">
+                  <div class="icon"><i data-lucide="sparkles" size="48"></i></div>
+                  <h3>Inspiration</h3>
+                  <p>We believe that stunning visuals and compelling stories are the best tools to inspire a lifelong love and respect for the wild.</p>
+               </div>
+               <div class="principle-card grid-card">
+                  <div class="icon"><i data-lucide="leaf" size="48"></i></div>
+                  <h3>Responsiblities</h3>
+                  <p>We advocate for ethical and sustainable tourism that respects wildlife, empowers local communities, and protects our planet.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+   </main>
+
+   <footer>
+      <div class="footer-above-content">
+         <div class="footer-logo">
+            <h1 class="logo-text">
+               <a href="../index.html">
+                  <i data-lucide="trees"></i> Wildlife India
+               </a>
+            </h1>
+         </div>
+         <div class="quick-links">
+            <h6>Quick Links</h6>
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="./about.html">About</a></li>
+               <li><a href="./explore.html">Explore</a></li>
+               <li><a href="./species.html">Species</a></li>
+               <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+         </div>
+         <div class="species">
+            <h6>Species</h6>
+            <ul>
+               <li>Asiatic Lion</li>
+               <li>Bengal Tiger</li>
+               <li>Asiatic Elephant</li>
+               <li>One-Horned Rhino</li>
+            </ul>
+         </div>
+         <div class="creator">
+            <h6>Created By-</h6>
+            <p>Viren Soni</p>
+            <p>
+               <a href="https://github.com/VirenSoni-Dev/"><i class="fa-brands fa-github"></i> GitHub</a>
+            </p>
+            <p>
+               <a href="https://linkedin.com/in/virensoni29/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </p>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>
+            &copy; <span id="year"></span> <a href="./index.html">Wildlife India</a>. All rights
+            reserved.
+         </p>
+      </div>
+   </footer>
+
+   <div class="floating-btn">
+      <a href="#top"><i data-lucide="circle-arrow-up"></i></a>
+   </div>
+
+   <script src="../js/nav.js" defer></script>
+   <script src="../js/script.js" defer></script>
+   <script>
+      lucide.createIcons();
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const Text = "Our Passion for the Wild.";
+      let index = 0;
+      const speed = 100;
+   
+      function typeWriter() {
+         if (index < Text.length) {
+         document.querySelector('.about-hero-title').innerHTML += Text.charAt(index);
+         index++;
+         setTimeout(typeWriter, speed);
+         }
+      }
+      typeWriter();
+   </script>
+</body>
+
+</html>

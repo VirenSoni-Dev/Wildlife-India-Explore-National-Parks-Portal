@@ -1,0 +1,117 @@
+:root {
+   --bg-color: #FFFFFF;
+   --fg-color: #2C3E50;
+   --accent-color: #1E8549;
+   --accent-text: #276749;
+   --accent-bg: #C6F6D5;
+   --secondary-color: #F0F4F8;
+   --primary-text: #1A202C;
+   --secondary-text: #4A5568;
+   --white: #FFFFFF;
+   /* --card-bg: #FFFFFF; */
+   --border-color: #DCDCDC;
+   --hover-bg: #EAF4EA;
+   --font-main: 'Inter', sans-serif;
+}
+
+.about-hero-sec {
+   width: 100%;
+   min-height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1721402495474-5f73d3ac8c76?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   background-position: center;
+   background-size: cover;
+}
+
+.about-hero-content {
+   text-align: center;
+}
+
+.about-hero-title {
+   color: var(--white);
+   font-size: 5rem;
+   font-weight: 800;
+}
+
+.mission-section, .initiative-section, .framework-section, .principles-section {
+   width: 100%;
+   padding: 4.8rem;
+}
+
+/* Mission Section */
+.mission-section {
+   min-height: 45vh;
+   text-align: center;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+}
+
+.mission-section h2 {
+   margin-bottom: 1rem;
+}
+
+.mission-section p {
+   font-size: 1.15rem;
+   color: var(--primary-text);
+   line-height: 1.5;
+   word-spacing: 4px;
+}
+
+/* Initiative Section */
+.initiative-section {
+   background-color: var(--secondary-color);
+   margin: 0 auto;
+}
+
+.initiative-section h2 {
+   margin-bottom: 1rem;
+}
+
+.initiative-section > div > p {
+   font-size: 1.15rem;
+   color: var(--primary-text);
+   text-align: center;
+   line-height: 1.5;
+   word-spacing: 4px;
+}
+
+.initiatives-grid {
+   margin-top: 1.5rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+}
+
+.initiative-card {
+   background-color: var(--bg-color);
+   border-radius: 1rem;
+   padding: 2.5rem;
+   text-align: center;
+   box-shadow: 0 8px 12px var(--border-color);
+   border-top: 5px solid var(--accent-color);
+}
+
+.initiative-icon {
+   color: var(--accent-color);
+   margin-bottom: 1rem;
+}
+
+.initiative-icon .lucide {
+   width: 2.2rem;
+   height: 2.2rem;
+}
+
+.initiative-card h3 {
+   color: var(--primary-text);
+   font-size: 1.5rem;
+   margin-bottom: .5rem;
+}
+
+.initiative-card p {
+   color: var(--secondary-text);
+   font-size: 1.05rem;
+   line-height: 1.7;
+}

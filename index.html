@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="fonts/stylesheet.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <script src="https://unpkg.com/lucide@latest"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+   <title>Wildlife India: Explore National Parks</title>
+</head>
+
+<body>
+
+   <div id="top"></div>
+   
+   <header>
+      <nav class="header-container">
+         <div class="logo">
+            <h1 class="logo-text">
+               <a href="./index.html"><i data-lucide="trees"></i>
+               Wildlife India</a>
+            </h1>
+         </div>
+         <div class="nav-links">
+            <ul>
+               <li class="nav-link current">
+                  <a href="./index.html">Home</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./pages/about.html">About</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./pages/explore.html">Explore</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./pages/species.html">Species</a>
+               </li>
+               <li class="nav-link mobile-contact-link">
+                  <a href="./pages/contact.html">
+                     <i class="fa-solid fa-phone"></i> Contact
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="nav-btn">
+            <button class="theme-btn" onclick="toggleDarkMode()"><i data-lucide="sun"></i></button>
+            <button id="sidebar-toggle-button" aria-expanded="false" onclick="toggleSidebar()">
+               <i id="sidebarIcon" data-lucide="menu"></i>
+            </button>
+            <a href="./pages/contact.html" class="contact-btn">
+               <i class="fa-solid fa-phone"></i> Contact
+            </a>
+         </div>
+      </nav>
+   </header>
+
+   <div id="overlay" aria-hidden="true" onclick="closeSidebar()"></div>
+
+   <main class="main">
+      <!-- Hero Section -->
+      <section class="hero-section">
+         <div id="wrapper" aria-hidden="true">
+            <div class="hero-text">
+               <h1>Guardians of the Wild : Discover <span>India's Natural Sanctuaries</span></h1>
+               <p>
+                  Explore the diverse wildlife and stunning landscapes of
+                  India's most famous national parks.
+               </p>
+               <a href="./pages/explore.html" class="hero-btn">Explore Now</a>
+            </div>
+         </div>
+      </section>
+
+      <!-- Featured Section -->
+      <section class="featured-section">
+         <div id="wrapper" aria-hidden="true">
+            <div class="featured-park" id="featuredParkSection">
+               <div class="featured-content">
+                  <span class="tag"><i data-lucide="calendar-days" class="lucide"></i> Park of
+                     the month</span>
+                  <h3 class="featured-title">Ranthambore National Park</h3>
+                  <p>
+                     A must-visit destination known for its stunning landscapes
+                     and diverse wildlife, offering a unique experience for
+                     every visitor.
+                  </p>
+                  <a href="./pages/park-details?id=1" class="hero-btn featured-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+               </div>
+               <div class="featured-img">
+                  <img src="./images/national-parks/ranthambore.webp" alt="Ranthambore National Park" />
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Icons Section -->
+      <section class="icons-section">
+         <div id="wrapper" aria-hidden="true">
+            <h2 class="section-title">Icons of the Wild</h2>
+            <div class="icons-grid">
+               <div class="icon-card">
+                  <img src="images/animals/bengal_tiger.jpeg" alt="Bengal Tiger" class="icon-card-bg" />
+                  <div class="icon-card-content">
+                     <h3>Bengal Tiger</h3>
+                     <p>
+                        The largest of all Asian big cats, a symbol of power and
+                        wilderness.
+                     </p>
+                  </div>
+               </div>
+               <div class="icon-card">
+                  <img src="images/animals/asiatic_elephant.jpeg" alt="Asiatic Elephant" class="icon-card-bg" />
+                  <div class="icon-card-content">
+                     <h3>Asiatic Elephant</h3>
+                     <p>
+                        A social and intelligent giant, crucial to forest
+                        ecosystems.
+                     </p>
+                  </div>
+               </div>
+               <div class="icon-card">
+                  <img src="images/animals/one-horned_rhino.jpeg" alt="One-Horned Rhino" class="icon-card-bg" />
+                  <div class="icon-card-content">
+                     <h3>One-Horned Rhino</h3>
+                     <p>
+                        A prehistoric marvel, brought back from the brink by
+                        conservation.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Parks Section -->
+      <section class="parks-section">
+         <div id="wrapper" aria-hidden="true">
+            <h2 class="section-title">Some National Parks of India</h2>
+            <div class="parks-grid" id="parksGrid">
+               <div class="park-card">
+                  <div class="park-image">
+                     <img src="./images/national-parks/ranthanbore.webp" alt="Ranthambore National Park"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/7393b3/white?text=Image+not+found';" />
+                  </div>
+                  <div class="park-content">
+                     <span class="tag"><i data-lucide="map-pin"></i> Rajasthan</span>
+                     <h4>Ranthambore National Park</h4>
+                     <p>
+                        One of the largest and most famous national parks in
+                        Northern India, renowned for its Bengal tigers.
+                     </p>
+                     <a href="" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                  </div>
+               </div>
+               <div class="park-card">
+                  <div class="park-image">
+                     <img src="./images/national-parks/ranthanbore.webp" alt="Ranthambore National Park"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/7393b3/white?text=Image+not+found';" />
+                  </div>
+                  <div class="park-content">
+                     <span class="tag"><i data-lucide="map-pin"></i> Rajasthan</span>
+                     <h4>Ranthambore National Park</h4>
+                     <p>
+                        One of the largest and most famous national parks in
+                        Northern India, renowned for its Bengal tigers.
+                     </p>
+                     <a href="" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                  </div>
+               </div>
+               <div class="park-card">
+                  <div class="park-image">
+                     <img src="./images/national-parks/ranthanbore.webp" alt="Ranthambore National Park"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/7393b3/white?text=Image+not+found';" />
+                  </div>
+                  <div class="park-content">
+                     <span class="tag"><i data-lucide="map-pin"></i> Rajasthan</span>
+                     <h4>Ranthambore National Park</h4>
+                     <p>
+                        One of the largest and most famous national parks in
+                        Northern India, renowned for its Bengal tigers.
+                     </p>
+                     <a href="" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                  </div>
+               </div>
+               <div class="park-card">
+                  <div class="park-image">
+                     <img src="./images/national-parks/ranthanbore.webp" alt="Ranthambore National Park"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/7393b3/white?text=Image+not+found';" />
+                  </div>
+                  <div class="park-content">
+                     <span class="tag"><i data-lucide="map-pin"></i> Rajasthan</span>
+                     <h4>Ranthambore National Park</h4>
+                     <p>
+                        One of the largest and most famous national parks in
+                        Northern India, renowned for its Bengal tigers.
+                     </p>
+                     <a href="" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="footer-above-content">
+         <div class="footer-logo">
+            <h1 class="logo-text">
+               <a href="./index.html">
+                  <i data-lucide="trees"></i> Wildlife India
+               </a>
+            </h1>
+         </div>
+         <div class="quick-links">
+            <h6>Quick Links</h6>
+            <ul>
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="./pages/about.html">About</a></li>
+               <li><a href="./pages/explore.html">Explore</a></li>
+               <li><a href="./pages/species.html">Species</a></li>
+               <li><a href="./pages/contact.html">Contact Us</a></li>
+            </ul>
+         </div>
+         <div class="species">
+            <h6>Species</h6>
+            <ul>
+               <li>Asiatic Lion</li>
+               <li>Bengal Tiger</li>
+               <li>Asiatic Elephant</li>
+               <li>One-Horned Rhino</li>
+            </ul>
+         </div>
+         <div class="creator">
+            <h6>Created By-</h6>
+            <p>Viren Soni</p>
+            <p>
+               <a href="https://github.com/VirenSoni-Dev/"><i class="fa-brands fa-github"></i> GitHub</a>
+            </p>
+            <p>
+               <a href="https://linkedin.com/in/virensoni29/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </p>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>
+            &copy; <span id="year"></span> <a href="./index.html">Wildlife India</a>. All rights
+            reserved.
+         </p>
+      </div>
+   </footer>
+
+   <div class="floating-btn" title="Back to Top">
+      <a href="#top"><i data-lucide="circle-arrow-up"></i></a>
+   </div>
+
+   <script src="js/nav.js" defer></script>
+   <script src="js/script.js" defer></script>
+   <script>
+      lucide.createIcons();
+      document.getElementById("year").textContent = new Date().getFullYear();
+   </script>
+</body>
+
+</html>
