@@ -16,9 +16,10 @@ fetch('../components/header.html')
    })
 
 fetch('../components/footer.html')
-   .then(reponse => {
+   .then(response => {
       return response.text();
    }).then(data => {
       document.getElementById('footerPlaceholder').innerHTML = data;
       lucide.createIcons();
+      document.getElementById("year").textContent = new Date().getFullYear();
    })
