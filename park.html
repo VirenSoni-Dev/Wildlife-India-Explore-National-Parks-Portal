@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="manifest" href="favicon/site.webmanifest">
+   <link rel="stylesheet" href="fonts/stylesheet.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/park.css">
+   <script src="https://unpkg.com/lucide@latest"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+
+   <div id="top"></div>
+
+   <header>
+      <nav class="header-container">
+         <div class="logo">
+            <h1 class="logo-text">
+               <a href="./index.html"><i data-lucide="trees"></i>
+               Wildlife India</a>
+            </h1>
+         </div>
+         <div class="nav-links">
+            <ul>
+               <li class="nav-link">
+                  <a href="./index.html">Home</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./pages/about.html">About</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./pages/explore.html">Explore</a>
+               </li>
+               <li class="nav-link">
+                  <a href="./pages/species.html">Species</a>
+               </li>
+               <li class="nav-link mobile-contact-link">
+                  <a href="./pages/contact.html">
+                     <i class="fa-solid fa-phone"></i> Contact
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="nav-btn">
+            <button class="theme-btn" onclick="toggleDarkMode()"><i data-lucide="sun"></i></button>
+            <button id="sidebar-toggle-button" aria-expanded="false" onclick="toggleSidebar()">
+               <i id="sidebarIcon" data-lucide="menu"></i>
+            </button>
+            <a href="./pages/contact.html" class="contact-btn">
+               <i class="fa-solid fa-phone"></i> Contact
+            </a>
+         </div>
+      </nav>
+   </header>
+
+   <div id="overlay" aria-hidden="true" onclick="closeSidebar()"></div>
+
+   <main id="contentPlaceholder" class="main">
+      <!-- Dynamic Content will be loaded here -->
+   </main>
+
+   <footer>
+      <div class="footer-above-content">
+         <div class="footer-logo">
+            <h1 class="logo-text">
+               <a href="./index.html">
+                  <i data-lucide="trees"></i> Wildlife India
+               </a>
+            </h1>
+         </div>
+         <div class="quick-links">
+            <h6>Quick Links</h6>
+            <ul>
+               <li><a href="./index.html">Home</a></li>
+               <li><a href="./pages/about.html">About</a></li>
+               <li><a href="./pages/explore.html">Explore</a></li>
+               <li><a href="./pages/species.html">Species</a></li>
+               <li><a href="./pages/contact.html">Contact Us</a></li>
+            </ul>
+         </div>
+         <div class="species">
+            <h6>Species</h6>
+            <ul>
+               <li>Asiatic Lion</li>
+               <li>Bengal Tiger</li>
+               <li>Asiatic Elephant</li>
+               <li>One-Horned Rhino</li>
+            </ul>
+         </div>
+         <div class="creator">
+            <h6>Created By-</h6>
+            <p>Viren Soni</p>
+            <p>
+               <a href="https://github.com/VirenSoni-Dev/"><i class="fa-brands fa-github"></i> GitHub</a>
+            </p>
+            <p>
+               <a href="https://linkedin.com/in/virensoni29/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </p>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>
+            &copy; <span id="year"></span> <a href="./index.html">Wildlife India</a>. All rights
+            reserved.
+         </p>
+      </div>
+   </footer>
+
+   <div class="floating-btn">
+      <a href="#top"><i data-lucide="circle-arrow-up"></i></a>
+   </div>
+
+   <script src="js/nav.js" defer></script>
+   <script src="js/script.js" defer></script>
+   <script type="module" src="js/detailed-page.js" defer></script>
+   <script>
+      lucide.createIcons();
+      document.getElementById("year").textContent = new Date().getFullYear();
+   </script>
+
+</body>
+
+</html>

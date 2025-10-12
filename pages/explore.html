@@ -33,11 +33,8 @@
                   <input type="text" id="searchPark" placeholder="Search by name or location..." />
                </div>
                <div class="filters">
-                  <select name="City" id="cityFilter">
-                     <option value="all" selected>All cities</option>
-                  </select>
-                  <select name="Animal" id="animalFilter">
-                     <option value="all" selected>All</option>
+                  <select name="State" id="stateFilter">
+                     <option value="all" selected>All states</option>
                   </select>
                </div>
             </div>
@@ -45,23 +42,7 @@
       </section>
 
       <section id="exploreGallery">
-         <div id="wrapper">
-            <div class="park-card">
-               <div class="park-image">
-                  <img src="./images/national-parks/ranthanbore.webp" alt="Ranthambore National Park"
-                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/7393b3/white?text=Image+not+found';" />
-               </div>
-               <div class="park-content">
-                  <span class="tag"><i data-lucide="map-pin"></i> Rajasthan</span>
-                  <h4>Ranthambore National Park</h4>
-                  <p>
-                     One of the largest and most famous national parks in
-                     Northern India, renowned for its Bengal tigers.
-                  </p>
-                  <a href="" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
-               </div>
-            </div>
-         </div>
+         <div id="wrapper"></div>
       </section>
    </main>
    
@@ -73,6 +54,7 @@
 
    <script src="../js/nav.js" defer></script>
    <script src="../js/script.js" defer></script>
+   <script type="module" src="../js/gallery.js" defer></script>
    <script>
       lucide.createIcons();
    </script>

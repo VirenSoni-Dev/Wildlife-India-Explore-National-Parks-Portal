@@ -6,7 +6,9 @@ fetch('../components/header.html')
    .then(response => {
       return response.text();
    }).then(data => {
-      document.getElementById('headerPlaceholder').innerHTML = data;
+      const header = document.getElementById('headerPlaceholder')
+      if (header === null) return;
+      header.innerHTML = data;
       lucide.createIcons();
       document.querySelectorAll('.nav-link a').forEach(a => {
          if (a.pathname === window.location.pathname) {
@@ -19,7 +21,9 @@ fetch('../components/footer.html')
    .then(response => {
       return response.text();
    }).then(data => {
-      document.getElementById('footerPlaceholder').innerHTML = data;
+      const footer = document.getElementById('footerPlaceholder')
+      if (footer === null) return;
+      footer.innerHTML = data;
       lucide.createIcons();
       document.getElementById("year").textContent = new Date().getFullYear();
    })
