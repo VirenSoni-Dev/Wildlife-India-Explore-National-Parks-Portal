@@ -58,7 +58,7 @@ header {
    justify-content: space-between;
    align-items: center;
    gap: 1.2rem;
-   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 0 6px rgba(20, 133, 73, .3);
 }
 
 .logo-text a {
@@ -398,6 +398,7 @@ header {
 
 .park-card {
    width: 100%;
+   max-width: 305px;
    height: 475px;
    background-color: var(--bg-color);
    box-shadow: 0 0 4px 4px var(--border-color);

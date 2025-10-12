@@ -4,8 +4,13 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+   <link rel="manifest" href="../favicon/site.webmanifest">
    <link rel="stylesheet" href="../fonts/stylesheet.css" />
    <link rel="stylesheet" href="../css/style.css" />
+   <link rel="stylesheet" href="../css/explore.css" />
    <script src="https://unpkg.com/lucide@latest"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
    <title>Explore National Parks & Sanctuaries | Wildlife India</title>
@@ -19,6 +24,47 @@
 
    <div id="overlay" aria-hidden="true" onclick="closeSidebar()"></div>
 
+   <main class="main">
+      <section class="searchbox-container">
+         <div id="wrapper">
+            <h3>Explore National Parks & Sanctuaries</h3>
+            <div class="search-and-filters">
+               <div class="search">
+                  <input type="text" id="searchPark" placeholder="Search by name or location..." />
+               </div>
+               <div class="filters">
+                  <select name="City" id="cityFilter">
+                     <option value="all" selected>All cities</option>
+                  </select>
+                  <select name="Animal" id="animalFilter">
+                     <option value="all" selected>All</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="exploreGallery">
+         <div id="wrapper">
+            <div class="park-card">
+               <div class="park-image">
+                  <img src="./images/national-parks/ranthanbore.webp" alt="Ranthambore National Park"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/7393b3/white?text=Image+not+found';" />
+               </div>
+               <div class="park-content">
+                  <span class="tag"><i data-lucide="map-pin"></i> Rajasthan</span>
+                  <h4>Ranthambore National Park</h4>
+                  <p>
+                     One of the largest and most famous national parks in
+                     Northern India, renowned for its Bengal tigers.
+                  </p>
+                  <a href="" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   
    <div id="footerPlaceholder"></div>
 
    <div class="floating-btn">
@@ -29,7 +75,6 @@
    <script src="../js/script.js" defer></script>
    <script>
       lucide.createIcons();
-      document.getElementById("year").textContent = new Date().getFullYear();
    </script>
 </body>
 
