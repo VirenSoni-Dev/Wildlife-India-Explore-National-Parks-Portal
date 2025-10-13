@@ -217,7 +217,7 @@ header {
 }
 
 .hero-text h1 {
-   color: #ffffffdb;
+   color: #ffffff;
    font-size: 4.1rem;
    font-weight: 900;
    margin-bottom: 1rem;
@@ -232,7 +232,7 @@ header {
 }
 
 .hero-text p {
-   color: #f0f4f8db;
+   color: #f0f4f8;
    font-size: 1.6rem;
    line-height: 1.5;
    max-width: 700px;
