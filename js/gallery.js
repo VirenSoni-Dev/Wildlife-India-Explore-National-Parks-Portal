@@ -11,7 +11,8 @@ console.log(names);
 function populateStateFilter() {
    const states = new Set();
    parks.forEach(park => states.add(park.state));
-   states.forEach(state => {
+   const stateArray = Array.from(states).sort();
+   stateArray.forEach(state => {
       const option = document.createElement('option');
       option.value = state;
       option.textContent = state;
@@ -34,7 +35,7 @@ function applyFilters() {
          stateValue === "all" || p.state.toLowerCase() === stateValue;
 
       return matchesSearch && matchesState;
-   });
+   }).sort((a, b) => a.name.localeCompare(b.name));
 
    console.log(results);
    

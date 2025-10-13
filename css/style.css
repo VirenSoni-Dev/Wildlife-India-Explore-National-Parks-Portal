@@ -18,11 +18,30 @@
    --bg-tint: #C4FFDC1D;
 }
 
+body[data-theme="dark"] {
+   --bg-color: #1A202C;
+   --fg-color: #E2E8F0;
+   --accent-color: #38A169E4;
+   --accent-text: #48BB78;
+   --accent-bg: #22543D;
+   --secondary-color: #2D3748;
+   --primary-text: #EDF2F7;
+   --secondary-text: #A0AEC0;
+   --white: #1A202C;
+   /* --card-bg: #2D3748; */
+   --border-color: #2d385014;
+   --hover-bg: #234E34;
+   --font-main: 'Inter', sans-serif;
+   --bg-tint: #242C3A;
+   /* --bg-tint: #232833; */
+}
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    scroll-behavior: smooth;
+   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 body {
@@ -198,6 +217,7 @@ header {
 }
 
 .hero-text h1 {
+   color: #ffffffdb;
    font-size: 4.1rem;
    font-weight: 900;
    margin-bottom: 1rem;
@@ -212,6 +232,7 @@ header {
 }
 
 .hero-text p {
+   color: #f0f4f8db;
    font-size: 1.6rem;
    line-height: 1.5;
    max-width: 700px;
@@ -530,7 +551,7 @@ footer {
    width: 100%;
    padding: 1rem auto;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    place-items: center;
    place-content: center;
 }
@@ -642,7 +663,7 @@ footer {
    display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 830px) {
    .header-container {
       padding: 12px 20px;
       gap: 1rem;

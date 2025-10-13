@@ -25,3 +25,5 @@ function toggleSidebar() {
       openSidebar();
    }
 }
+
+window.toggleSidebar = toggleSidebar;

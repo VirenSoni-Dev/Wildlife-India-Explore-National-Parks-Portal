@@ -30,7 +30,7 @@
 }
 
 .about-hero-title {
-   color: var(--white);
+   color: #FFF;
    font-size: 5rem;
    font-weight: 800;
 }
@@ -131,6 +131,7 @@
 }
 
 .definitions-container details {
+   color: var(--primary-text);
    background-color: var(--bg-color);
    border-radius: .5rem;
    padding: 1.5rem;

@@ -69,15 +69,15 @@ const parks = [
          "The only place in the world where the Asiatic Lion can be found in the wild.",
       detailPage: "gir"
    },
-   {
-      name: "Bandhavgarh National Park",
-      state: "Madhya Pradesh",
-      animals: ["Bengal Tiger", "Leopard", "Spotted Deer", "Wild Boar", "Jackal"],
-      image: "../images/national-parks/bandhavgarh.webp",
-      shortDesc:
-         "Known for having one of the highest densities of Bengal tigers in India.",
-      detailPage: "bandhavgarh"
-   },
+   // {
+   //    name: "Bandhavgarh National Park",
+   //    state: "Madhya Pradesh",
+   //    animals: ["Bengal Tiger", "Leopard", "Spotted Deer", "Wild Boar", "Jackal"],
+   //    image: "../images/national-parks/bandhavgarh.webp",
+   //    shortDesc:
+   //       "Known for having one of the highest densities of Bengal tigers in India.",
+   //    detailPage: "bandhavgarh"
+   // },
    {
       name: "Kanha National Park",
       state: "Madhya Pradesh",
@@ -115,13 +115,13 @@ const parks = [
       detailPage: "periyar"
    },
    {
-      name: "Silent Valley National Park",
-      state: "Kerala",
-      animals: ["Lion-tailed Macaque", "Nilgiri Langur", "Tiger", "Leopard"],
-      image: "../images/national-parks/silent-valley.webp",
+      name: "Kanger Valley National Park",
+      state: "Chhattisgarh",
+      animals: ["Tiger", "Leopard", "Wild Boar", "Sambar Deer", "Rhesus Macaque", "Monitor Lizard"],
+      image: "../images/national-parks/kanger-valley.webp",
       shortDesc:
-         "A pristine rainforest in the Nilgiri Hills, protecting endangered species and dense greenery.",
-      detailPage: "silent-valley"
+         "A stunning park in the Bastar region known for its lush forests, limestone caves, waterfalls, and rich biodiversity.",
+      detailPage: "kanger-valley"
    },
    {
       name: "Eravikulam National Park",
@@ -204,15 +204,15 @@ const parks = [
          "High-altitude cold desert park, globally famous for its population of snow leopards.",
       detailPage: "hemis"
    },
-   {
-      name: "Desert National Park",
-      state: "Rajasthan",
-      animals: ["Great Indian Bustard", "Desert Fox", "Chinkara", "Lizard"],
-      image: "../images/national-parks/desert.webp",
-      shortDesc:
-         "A vast Thar Desert ecosystem known for sand dunes and rare desert species.",
-      detailPage: "desert"
-   },
+   // {
+   //    name: "Desert National Park",
+   //    state: "Rajasthan",
+   //    animals: ["Great Indian Bustard", "Desert Fox", "Chinkara", "Lizard"],
+   //    image: "../images/national-parks/desert.webp",
+   //    shortDesc:
+   //       "A vast Thar Desert ecosystem known for sand dunes and rare desert species.",
+   //    detailPage: "desert"
+   // },
    {
       name: "Bannerghatta National Park",
       state: "Karnataka",

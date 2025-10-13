@@ -128,7 +128,7 @@ function parkDetailsPage() {
    else {
       contentPlaceholder.innerHTML = `
       <section class="description" style="padding-top: 150px;">
-      <div id="wrapper" style="text-align:center;">
+      <div id="wrapper" style="text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:27vh; gap:1.5rem;">
       <h2>Park Not Found</h2>
       <p>Sorry, we couldn't find the park you're looking for. Please check the name and try again.</p>
       <a href="./pages/explore.html" style="text-decoration:none; color:var(--accent-color); font-weight:600;">Back to Explore Page</a>

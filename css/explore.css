@@ -63,7 +63,7 @@
 .search input:focus {
    outline: none;
    border: 1.5px solid var(--accent-color);
-   box-shadow: 0 0 8px rgba(63, 169, 119, 0.43);
+   box-shadow: 0 0 10px 4px rgba(63, 169, 119, 0.43);
 }
 
 .filters select {
@@ -88,7 +88,7 @@
 .filters select:focus {
    outline: none;
    border: 1.5px solid var(--accent-color);
-   box-shadow: 0 0 8px rgba(63, 169, 119, 0.43);
+   box-shadow: 0 0 10px 4px rgba(63, 169, 119, 0.43);
 }
 
 #exploreGallery {

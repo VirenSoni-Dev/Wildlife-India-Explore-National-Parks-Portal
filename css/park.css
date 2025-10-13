@@ -100,6 +100,7 @@
 }
 
 .two-col-layout {
+   color: var(--primary-text);
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 4rem;
@@ -161,6 +162,7 @@
 
 .safari-card {
    background: var(--secondary-color);
+   color: var(--primary-text);
    padding: 2rem;
    border-radius: 1rem;
 }
