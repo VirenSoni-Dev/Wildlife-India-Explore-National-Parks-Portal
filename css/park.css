@@ -184,3 +184,26 @@
 .safari-card li {
    margin-bottom: 0.5rem;
 }
+
+@media (max-width: 768px) {
+   .park-hero, .description, .fauna-section, .safari-section {
+      padding: 0 1rem;
+   }
+
+   .park-hero-grid, .two-col-layout, .safari-grid {
+      grid-template-columns: 1fr;
+   }
+
+   .park-hero-image {
+      height: auto;
+      max-width: 100%;
+   }
+
+   .park-hero-text h1 {
+      font-size: 2.8rem;
+   }
+
+   .park-hero-text p {
+      font-size: 1.2rem;
+   }
+}

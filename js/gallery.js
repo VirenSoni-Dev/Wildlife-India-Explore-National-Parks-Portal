@@ -3,10 +3,26 @@ import parks from '../data/parks-card-details.js';
 const gallery = document.querySelector('#exploreGallery #wrapper');
 const searchInput = document.getElementById('searchPark');
 const stateFilter = document.getElementById('stateFilter');
+const speciesFilter = document.getElementById('speciesFilter');
 searchInput.value = "";
 
 const names = parks.map(p => p.name.toLowerCase());
 console.log(names);
+
+function populateSpeciesFilter() {
+   const species = new Set();
+   parks.forEach(park => {
+      park.animals.forEach(animal => species.add(animal));
+   });
+   const speciesArray = Array.from(species).sort();
+   console.log(speciesArray);
+   speciesArray.forEach(species => {
+      const option = document.createElement('option');
+      option.value = species;
+      option.textContent = species;
+      speciesFilter.appendChild(option);
+   })
+}
 
 function populateStateFilter() {
    const states = new Set();
@@ -23,6 +39,7 @@ function populateStateFilter() {
 function applyFilters() {
    const searchValue = searchInput.value.trim().toLowerCase();
    const stateValue = stateFilter.value.trim().toLowerCase();
+   const speciesValue = speciesFilter.value.trim().toLowerCase();
    gallery.innerHTML = "";
 
    const results = parks.filter(p => {
@@ -33,8 +50,11 @@ function applyFilters() {
       
       const matchesState = 
          stateValue === "all" || p.state.toLowerCase() === stateValue;
+      
+      const matchesSpecies =
+         speciesValue === "all" || p.animals.some(a => a.toLowerCase() === speciesValue);
 
-      return matchesSearch && matchesState;
+      return matchesSearch && matchesState && matchesSpecies;
    }).sort((a, b) => a.name.localeCompare(b.name));
 
    console.log(results);
@@ -51,7 +71,7 @@ function applyFilters() {
             <span class="tag"><i data-lucide="map-pin"></i> ${result.state}</span>
             <h4>${result.name}</h4>
             <p>${result.shortDesc}</p>
-            <a href="../park.html?park=${result.detailPage}" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+            <a href="../national-parks.html?park=${result.detailPage}" class="hero-btn park-btn"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
          </div>
          `;
    
@@ -61,9 +81,11 @@ function applyFilters() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+   populateSpeciesFilter();
    populateStateFilter();
    applyFilters();
 });
 
 searchInput.addEventListener('input', applyFilters);
 stateFilter.addEventListener('change', applyFilters);
+speciesFilter.addEventListener('change', applyFilters);
