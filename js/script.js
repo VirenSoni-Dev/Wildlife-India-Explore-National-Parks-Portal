@@ -1,6 +1,5 @@
-pathReturner = (path) => {
-   return ('.' + path)
-}
+const TopOfPage = document.getElementById('top');
+const floatingButton = document.querySelector('.floating-btn')
 
 fetch('../components/header.html')
    .then(response => {
@@ -49,3 +48,20 @@ function applySavedTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', applySavedTheme);
+
+const EnteringObserver = new IntersectionObserver((entries) => {
+   entries.forEach(entry => {
+      if (entry.isIntersecting && !floatingButton.classList.contains('visibility')) {
+         floatingButton.classList.add('visibility');
+      }
+   });
+});
+
+EnteringObserver.observe(TopOfPage);
+
+window.addEventListener('scroll', () => {
+   const scrollPosition = window.scrollY;
+   if (scrollPosition > 200 && floatingButton.classList.contains('visibility')) {
+      floatingButton.classList.remove('visibility');
+   }
+})
