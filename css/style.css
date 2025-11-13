@@ -11,7 +11,6 @@
    --primary-text: #1A202C;
    --secondary-text: #4A5568;
    --white: #FFFFFF;
-   /* --card-bg: #FFFFFF; */
    --border-color: #00000014;
    --hover-bg: #EAF4EA;
    --font-main: 'Inter', sans-serif;
@@ -28,13 +27,14 @@ body[data-theme="dark"] {
    --primary-text: #EDF2F7;
    --secondary-text: #A0AEC0;
    --white: #1A202C;
-   /* --card-bg: #2D3748; */
    --border-color: #2d385014;
    --hover-bg: #234E34;
    --font-main: 'Inter', sans-serif;
    --bg-tint: #242C3A;
-   /* --bg-tint: #232833; */
 }
+/* --bg-tint: #232833; */
+/* --card-bg: #FFFFFF; */
+/* --card-bg: #2D3748; */
 
 * {
    margin: 0;
